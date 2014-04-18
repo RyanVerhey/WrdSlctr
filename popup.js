@@ -4,10 +4,11 @@ var definitionGenerator = {
 
   requestDefinition: function() {
     chrome.tabs.executeScript({code: "window.getSelection().toString();"},function(selectedText){
+      alert(selectedText);
       var query = selectedText[0];
       var searchInDictionary_ = 'http://www.dictionaryapi.com/api/v1/references/thesaurus/xml/' +
                         encodeURIComponent(query) + '?key=2d8fe204-c216-41b7-8c18-e16b699c0641'
-
+      console.log(query)
       var req = new XMLHttpRequest();
       req.open("GET", searchInDictionary_, true);
       req.onload = this.logConsole_;
