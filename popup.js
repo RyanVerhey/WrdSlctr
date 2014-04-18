@@ -1,4 +1,3 @@
-
 var definitionGenerator = {
   query: '',
 
@@ -34,8 +33,6 @@ var definitionGenerator = {
       console.log("nothing");
       $("body").append('<p>Word not found</p>');
       $("body").append('<a target="_blank" href="http://www.merriam-webster.com/dictionary/' + definitionGenerator.query + '">Search on Merriam-Webster</a>');
-    } else if(definitionGenerator.query === '')
-      $("body").append('<p style="color:red;">No word selected</p>');
     } else {
       // console.log($word.toString())
       var def = document.createElement('p');
