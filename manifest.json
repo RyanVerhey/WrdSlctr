@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "WrdSlctr",
+  "description": "Two capitals, one word, zero vowels.",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
